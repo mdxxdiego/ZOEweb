@@ -1,0 +1,36 @@
+TOKEN CI-ULTIMO:
+======
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiZElFZEFZIHNGT1QuIiwiaWF0IjoxNzg0NjY2NTMyLCJleHAiOjE4MTYyMjQxMzJ9.aCGYhelPsI1QJbg8OtnAI9ew0bDmXbzR2BM31WHajnM
+
+
+TOKEN CI:
+======
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllRGF5IFNvZnQuIiwiaWF0IjoxNzgwMDA0ODQ2LCJleHAiOjE4MTE1NjI0NDZ9.sCDGgh0cjrfm5UukWe63bKK95bLY4HMx6I3fsDjvIpQ
+
+Ejemplo de consumo cURL
+==========================
+curl --location 'https://apicedula.socket-studio.com/consulta-cedula/consulta/1726669383'             --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllZ28gRGFycXVlYSIsImlhdCI6MTc3NjM3MjMyMSwiZXhwIjoxODA3OTI5OTIxfQ.Bx-DR1bYmMrCHrILH-gE9f40IbsdAQ-9-ilodqcJV00'
+
+Ejemplo en JavaScript
+=====================
+   fetch("https://apicedula.socket-studio.com/consulta-cedula/consulta/1726669383", {
+            headers: { "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllZ28gRGFycXVlYSIsImlhdCI6MTc3NjM3MjMyMSwiZXhwIjoxODA3OTI5OTIxfQ.Bx-DR1bYmMrCHrILH-gE9f40IbsdAQ-9-ilodqcJV00" }
+            })
+            .then(r => r.json())
+            .then(console.log) 
+
+
+
+TOKEN RUC:
+===========
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllZ28gRGFycXVlYSIsImlhdCI6MTc3NjM3Mjk5OSwiZXhwIjoxODA3OTMwNTk5fQ.65Wm3h5m7N_R_bJzL8jJ12O4OWWWGr-I2e6neDe8Ah0
+
+Ejemplo consumo cURL
+curl --location 'https://apiruc.socket-studio.com/api/ruc/consulta/free/1790016919001' --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllZ28gRGFycXVlYSIsImlhdCI6MTc3NjM3Mjk5OSwiZXhwIjoxODA3OTMwNTk5fQ.65Wm3h5m7N_R_bJzL8jJ12O4OWWWGr-I2e6neDe8Ah0'
+Ejemplo JavaScript
+fetch("https://apiruc.socket-studio.com/api/ruc/consulta/free/1790016919001", {
+  headers: { "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXByZXNhIjoiRGllZ28gRGFycXVlYSIsImlhdCI6MTc3NjM3Mjk5OSwiZXhwIjoxODA3OTMwNTk5fQ.65Wm3h5m7N_R_bJzL8jJ12O4OWWWGr-I2e6neDe8Ah0" }
+})
+.then(r => r.json())
+.then(console.log)
